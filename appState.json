@@ -1,0 +1,95 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "701aba15-395b-4956-bdd4-1c86bde6f721": {
+        "id": "701aba15-395b-4956-bdd4-1c86bde6f721",
+        "parent": null,
+        "name": "kkinesistriggerdemopy.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kkinesistriggerdemopy.py",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "kkinesistriggerdemopy"
+        },
+        "triggers": [
+          {
+            "resourceName": "kinesisk",
+            "config": {
+              "StartingPosition": "TRIM_HORIZON",
+              "BatchSize": "100"
+            }
+          }
+        ],
+        "lastUpdated": 1604386190700
+      }
+    },
+    "openFiles": [
+      "701aba15-395b-4956-bdd4-1c86bde6f721"
+    ],
+    "currentFileId": "701aba15-395b-4956-bdd4-1c86bde6f721",
+    "resources": {
+      "kinesisk": {
+        "name": "kinesisk",
+        "type": "Kinesis",
+        "config": {
+          "mode": 0,
+          "StreamName": "k",
+          "shards": 1,
+          "region": "us-east-1",
+          "triggerParams": {
+            "StartingPosition": "TRIM_HORIZON",
+            "BatchSize": "100"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.5",
+    "projectName": "kkinesistriggerdemopy",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1604386210970
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "kkinesistriggerdemopy",
+      "url": "https://github.com/Kumudikatest/kkinesistriggerdemopy"
+    }
+  }
+}
